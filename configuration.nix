@@ -47,6 +47,8 @@
     polkit.enable = true;
     # polkit.package 
     pam.services = {
+      login.u2fAuth = true;
+      sudo.u2fAuth = true;
       sddm = {
         enableGnomeKeyring = true;
       };
