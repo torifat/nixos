@@ -13,6 +13,7 @@
   home.packages = with pkgs; [
     libnotify
     hyprpicker
+    libsForQt5.polkit-kde-agent
     # Screenshot
     grim
     slurp
@@ -23,6 +24,27 @@
     enable = true;
     package = pkgs.hyprland;
     systemd.enable = true;
+  };
+
+  systemd.user.services.polkit-kde-auth-agent = {
+    Unit = {
+      Description = "PolKit KDE Auth Service";
+      PartOf = [ "graphical-session.target" ];
+      Requires = [ "graphical-session.target" ];
+      After = [ "graphical-session.target" ];
+    };
+
+    Service = {
+      ExecStart = "${pkgs.libsForQt5.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1";
+      BusName = "org.kde.polkit-kde-authentication-agent-1";
+      Slice = "background.slice";
+      TimeoutSec = "5sec";
+      Restart = "on-failure";
+    };
+
+    Install = {
+      WantedBy = [ "hyprland-session.target" ];
+    };
   };
 
   services.mako = {
