@@ -40,7 +40,6 @@ in
   };
 
   home.packages = with pkgs; [
-    fd
     fzf
     ripgrep
     prettierd
@@ -49,6 +48,12 @@ in
     zig
     cargo
   ];
+
+  programs.fd = {
+    enable = true;
+    # Search hidden files and directories.
+    hidden = true;
+  };
 
   stylix.targets.neovim.enable = false;
   programs.neovim = {

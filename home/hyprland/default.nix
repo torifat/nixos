@@ -22,6 +22,21 @@
     wl-clipboard
   ];
 
+  stylix.targets.gtk.enable = false;
+  gtk = {
+    enable = true;
+
+    theme = {
+      package = pkgs.rose-pine-gtk-theme;
+      name = "rose-pine";
+    };
+
+    iconTheme = {
+      package = pkgs.rose-pine-icon-theme;
+      name = "rose-pine";
+    };
+  };
+
   wayland.windowManager.hyprland = {
     enable = true;
     package = pkgs.hyprland;
