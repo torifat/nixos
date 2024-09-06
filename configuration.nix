@@ -54,6 +54,7 @@
       };
     };
   };
+  services.pcscd.enable = true;
 
   hardware.enableAllFirmware = true;
 
@@ -137,7 +138,6 @@
     nixfmt-rfc-style
     tldr
     btop
-    #   wget
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

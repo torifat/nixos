@@ -19,16 +19,20 @@
       font-awesome
       # wayland optimized Discord client
       vesktop
+      # Todo app
+      dooit
+      # Markdown reader
+      glow
+      # File manager
+      xfce.thunar
+      # YubiKey app
+      yubioath-flutter
       # Misc
       bluetuith
       unzip
       entr
       minesweep-rs
       ncdu
-      # Todo app
-      dooit
-      # Markdown reader
-      glow
     ];
     shellAliases = {
       g = "git";
