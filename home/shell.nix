@@ -8,6 +8,7 @@
       n = "nix";
       v = "vim";
       lst = "ls --tree";
+      cat = "bat";
     };
   };
 
