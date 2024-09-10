@@ -1,10 +1,11 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
     ./mount.nix
     ./steam.nix
     ./nvidia.nix
+    ./android.nix
   ];
 
   programs.gamescope.enable = true;
