@@ -1,5 +1,15 @@
 { pkgs, ... }:
 
+let
+  vivid-glassy-dark-icon-theme = import ./vivid-glassy-dark-icon-theme.nix {
+    inherit (pkgs)
+      lib
+      fetchFromGitHub
+      stdenvNoCC
+      gtk3
+      ;
+  };
+in
 {
   imports = [
     ./env.nix
@@ -27,13 +37,13 @@
     enable = true;
 
     theme = {
-      package = pkgs.rose-pine-gtk-theme;
-      name = "rose-pine";
+      package = pkgs.flat-remix-gtk;
+      name = "Flat-Remix-GTK-Grey-Darkest";
     };
 
     iconTheme = {
-      package = pkgs.rose-pine-icon-theme;
-      name = "rose-pine";
+      package = vivid-glassy-dark-icon-theme;
+      name = "vivid-glassy-dark-icon-theme";
     };
   };
 
