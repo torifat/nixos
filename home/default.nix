@@ -44,7 +44,9 @@
 
   services.network-manager-applet.enable = true;
 
-  programs.firefox.enable = true;
+  programs.firefox = {
+    enable = true;
+  };
 
   programs.nix-index = {
     enable = true;

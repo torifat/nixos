@@ -23,11 +23,11 @@
 
       box.module {}
 
-      .modules-left label.module {
+      .modules-left .module {
         margin-right: 10px;
       }
 
-      .modules-right label.module {
+      .modules-right .module {
         margin-left: 10px;
       }
 
@@ -38,12 +38,22 @@
         background: #${config.stylix.base16Scheme.base05};
       }
 
+      #tray {
+        border-radius: 10px;
+        padding: 0 10px;
+        background: #${config.stylix.base16Scheme.base00};
+      }
+
       #bluetooth {
         background: #${config.stylix.base16Scheme.base0D};
       }
 
       #pulseaudio {
         background: #${config.stylix.base16Scheme.base0A};
+      }
+
+      #custom-power {
+        background: #${config.stylix.base16Scheme.base08};
       }
 
       #clock {
@@ -69,9 +79,24 @@
           "network"
           "pulseaudio"
           "clock"
+          "custom/power"
         ];
 
+        # "hyprland/workspaces" = {
+        #   "format" = "<sub>{icon}</sub>\n{windows}";
+        #   "format-window-separator" = "\n";
+        #   "window-rewrite-default" = "";
+        #   "window-rewrite" = {
+        #     "title<.*youtube.*>" = "";
+        #     "class<firefox>" = "";
+        #     "class<firefox> title<.*github.*>" = "";
+        #     "foot" = "";
+        #     "code" = "󰨞";
+        #   };
+        # };
+
         tray = {
+          icon-size = 16;
           spacing = 10;
         };
 
@@ -100,8 +125,15 @@
 
         clock = {
           format = " {:%H:%M}";
-          format-alt = " {:%d %b}";
+          format-alt = " {:%b %d}";
           tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
+        };
+
+        "custom/power" = {
+          format = "";
+          # format = "";
+          on-click = "rofi -show powermenu";
+          on-click-right = "killall rofi";
         };
       };
     };

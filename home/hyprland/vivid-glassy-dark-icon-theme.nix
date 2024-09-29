@@ -12,8 +12,8 @@ stdenvNoCC.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "L4ki";
     repo = "Vivid-Plasma-Themes";
-    rev = "cdcbad3bafca0c7a39fd8e4ccdbe493779e398ec";
-    hash = "sha256-BPY9KhJ+l9YBkSnWB2ETwG7mSYRC3t/XJE6rLP8CqtE=";
+    rev = "main";
+    hash = "sha256-lChdx3UjK0fijR0tkiLZFrRpi3uwL2LkDTlFvUHLb8g=";
   };
 
   nativeBuildInputs = [ gtk3 ];
