@@ -106,6 +106,18 @@
           on-click-right = "killall rofi";
         };
 
+        bluetooth = {
+          tooltip = false;
+          on-click = "blueman-manager";
+          format = "{icon}";
+          format-icons = {
+            default = [
+              ""
+              ""
+            ];
+          };
+        };
+
         pulseaudio = {
           tooltip = false;
           scroll-step = 5;
