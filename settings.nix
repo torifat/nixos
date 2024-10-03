@@ -7,7 +7,7 @@
   email = "to.rifat@gmail.com";
   system = "x86_64-linux";
   locale = "en_AU.UTF-8";
-  timezone = "Australia/Sydeny";
+  timeZone = "Australia/Sydney";
   wallpaper = ./stylix/wallpaper.png;
   lockscreen = ./stylix/lock.png;
 }
