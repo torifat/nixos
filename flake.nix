@@ -32,10 +32,13 @@
     }:
     let
       settings = import (./settings.nix) { };
+      system = settings.system;
+      pkgs = import nixpkgs { inherit system; };
     in
     {
+      formatter.${system} = pkgs.nixfmt-rfc-style;
       nixosConfigurations.lovelace = nixpkgs.lib.nixosSystem {
-        system = settings.system;
+        inherit system;
         modules = [
           ./configuration.nix
           home-manager.nixosModules.home-manager
@@ -59,7 +62,7 @@
           disko.nixosModules.disko
           {
             environment.systemPackages = [
-              ghostty.packages.${settings.system}.default
+              ghostty.packages.${system}.default
             ];
           }
           stylix.nixosModules.stylix

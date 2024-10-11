@@ -66,9 +66,6 @@
 
   programs.zsh = {
     enable = true;
-    shellAliases = {
-      # update = "sudo nixos-rebuild switch --flake ~/.config/nixos";
-    };
   };
 
   programs.zinit.enable = true;
