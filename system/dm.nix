@@ -41,7 +41,10 @@
     };
   };
 
-  environment.systemPackages = [ pkgs.catppuccin-cursors.mochaDark ];
+  environment.systemPackages = with pkgs; [
+    libsForQt5.qt5.qtgraphicaleffects
+    catppuccin-cursors.mochaDark
+  ];
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.plasma5Packages.xdg-desktop-portal-kde ];

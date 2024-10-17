@@ -18,7 +18,7 @@
     bind =
       [
         "$mod, Q, killactive,"
-        "$mod, R, exec, rofi -show drun -show-icons"
+        "$mod, SPACE, exec, rofi -show drun -show-icons"
         "$mod SHIFT, T, exec, ghostty"
         "$mod, DELETE, exit,"
         "$mod, ESC, exec, hyprlock"

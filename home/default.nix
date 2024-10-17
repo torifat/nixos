@@ -25,6 +25,9 @@
       glow
       # File manager
       xfce.thunar
+      # PDF Reader
+      zathura
+      okular
       # YubiKey app
       yubioath-flutter
       # Misc
@@ -33,13 +36,22 @@
       entr
       minesweep-rs
       ncdu
+      google-chrome
     ];
     stateVersion = "24.05";
   };
 
-  xdg.userDirs = {
-    enable = true;
-    createDirectories = true;
+  xdg = {
+    userDirs = {
+      enable = true;
+      createDirectories = true;
+    };
+    mimeApps = {
+      enable = true;
+      defaultApplications = {
+        "application/pdf" = "okular.desktop";
+      };
+    };
   };
 
   services.network-manager-applet.enable = true;

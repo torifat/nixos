@@ -13,7 +13,7 @@ stdenvNoCC.mkDerivation rec {
     owner = "L4ki";
     repo = "Vivid-Plasma-Themes";
     rev = "main";
-    hash = "sha256-lChdx3UjK0fijR0tkiLZFrRpi3uwL2LkDTlFvUHLb8g=";
+    hash = "sha256-EfGaJDrkYEZT3hT82/lmz/OlqLll0GF1SQqC+i3GtAc=";
   };
 
   nativeBuildInputs = [ gtk3 ];
