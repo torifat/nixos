@@ -9,6 +9,7 @@
     ./bluetooth.nix
     ./shell.nix
     ./utils.nix
+    ./wooting.nix
   ];
 
   # Auto mount/unmount drive
