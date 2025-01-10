@@ -2,7 +2,7 @@
 
 {
   stylix = {
-    enable = true;
+    enable = false;
 
     polarity = "dark";
     base16Scheme = {
