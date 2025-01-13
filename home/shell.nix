@@ -28,20 +28,21 @@
 
   programs.bat = {
     enable = true;
-    extraPackages = with pkgs.bat-extras; [
-      # Quickly search through and highlight files using ripgrep.
-      batgrep
-      # Read system manual pages (man) using bat as the manual page formatter.
-      batman
-      # A less (and soon bat) preprocessor for viewing more types of files in the terminal.
-      batpipe
-      # Watch for changes in one or more files, and print them with bat.
-      batwatch
-      # Diff a file against the current git index, or display the diff between two files.
-      # batdiff
-      # Pretty-print source code and highlight it with bat.
-      prettybat
-    ];
+    #  Currently broken
+    # extraPackages = with pkgs.bat-extras; [
+    #   # Quickly search through and highlight files using ripgrep.
+    #   batgrep
+    #   # Read system manual pages (man) using bat as the manual page formatter.
+    #   batman
+    #   # A less (and soon bat) preprocessor for viewing more types of files in the terminal.
+    #   batpipe
+    #   # Watch for changes in one or more files, and print them with bat.
+    #   batwatch
+    #   # Diff a file against the current git index, or display the diff between two files.
+    #   # batdiff
+    #   # Pretty-print source code and highlight it with bat.
+    #   prettybat
+    # ];
   };
 
   programs.lsd = {
