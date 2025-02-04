@@ -3,7 +3,7 @@
 {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
-      "firefox"
+      "zen"
       "ghostty"
       "1password --silent"
     ];
