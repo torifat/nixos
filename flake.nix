@@ -18,6 +18,7 @@
     ghostty.url = "git+ssh://git@github.com/ghostty-org/ghostty";
     stylix.url = "github:danth/stylix";
     sddm-sugar-candy-nix.url = "gitlab:Zhaith-Izaliel/sddm-sugar-candy-nix";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
   outputs =
@@ -28,6 +29,7 @@
       ghostty,
       stylix,
       sddm-sugar-candy-nix,
+      zen-browser,
       ...
     }:
     let
@@ -46,7 +48,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.${settings.username} = import ./home;
-            # home-manager.backupFileExtension = "old";
+            home-manager.backupFileExtension = "backup";
             home-manager.extraSpecialArgs = {
               inherit settings;
             };
@@ -63,6 +65,7 @@
           {
             environment.systemPackages = [
               ghostty.packages.${system}.default
+              zen-browser.packages.${system}.default
             ];
           }
           stylix.nixosModules.stylix

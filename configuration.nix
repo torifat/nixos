@@ -45,7 +45,7 @@
   services.gnome.gnome-keyring.enable = true;
   security = {
     polkit.enable = true;
-    # polkit.package 
+    # polkit.package
     pam.services = {
       login.u2fAuth = true;
       sudo.u2fAuth = true;
@@ -101,7 +101,7 @@
         firefox
         chromium
         zen
-        zen-bin
+        zen-beta
       '';
       mode = "0755";
     };
