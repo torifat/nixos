@@ -15,7 +15,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ghostty.url = "git+ssh://git@github.com/ghostty-org/ghostty";
+    ghostty.url = "github:ghostty-org/ghostty";
     stylix.url = "github:danth/stylix";
     sddm-sugar-candy-nix.url = "gitlab:Zhaith-Izaliel/sddm-sugar-candy-nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
@@ -48,7 +48,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.${settings.username} = import ./home;
-            home-manager.backupFileExtension = "backup";
+            home-manager.backupFileExtension = "old";
             home-manager.extraSpecialArgs = {
               inherit settings;
             };
