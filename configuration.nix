@@ -45,7 +45,6 @@
   services.gnome.gnome-keyring.enable = true;
   security = {
     polkit.enable = true;
-    # polkit.package
     pam.services = {
       login.u2fAuth = true;
       sudo.u2fAuth = true;
@@ -79,11 +78,6 @@
   programs.lazygit.enable = true;
   programs.fzf.fuzzyCompletion = true;
 
-  # Enable the unfree 1Password packages
-  #nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-  #  "1password-gui"
-  #  "1password"
-  #];
   # Alternatively, you could also just allow all unfree packages
   nixpkgs.config.allowUnfree = true;
 
