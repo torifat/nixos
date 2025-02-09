@@ -23,6 +23,10 @@
         "$mod, DELETE, exit,"
         "$mod, ESC, exec, hyprlock"
 
+        # Screenshots
+        "CTRL SHIFT, 4, exec, grim -g \"$(slurp)\" - | wl-copy"
+        "CTRL SHIFT, 3, exec, grim - | wl-copy"
+
         # Move window focus with vim keys
         "$mod, H, movefocus, l"
         "$mod, L, movefocus, r"
@@ -40,7 +44,7 @@
         "$mod CTRL SHIFT, L, movetoworkspace, r+1"
         "$mod CTRL SHIFT, H, movetoworkspace, r-1"
 
-        # Example special workspace (scratchpad)
+        # Special workspace (scratchpad)
         "$mod, S, togglespecialworkspace, magic"
         "$mod SHIFT, S, movetoworkspace, special:magic"
       ]
