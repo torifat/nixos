@@ -47,6 +47,8 @@
         # Special workspace (scratchpad)
         "$mod, S, togglespecialworkspace, magic"
         "$mod SHIFT, S, movetoworkspace, special:magic"
+
+        "$mod SHIFT, SPACE, exec, hyprctl switchxkblayout current next"
       ]
       ++ (
         # Workspaces

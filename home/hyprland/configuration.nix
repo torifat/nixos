@@ -6,6 +6,8 @@
       "zen"
       "ghostty"
       "1password --silent"
+      # Input Method Daemon
+      "fcitx5 -d"
     ];
 
     input = {

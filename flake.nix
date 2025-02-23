@@ -48,7 +48,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.${settings.username} = import ./home;
-            home-manager.backupFileExtension = "old";
+            home-manager.backupFileExtension = "xyz";
             home-manager.extraSpecialArgs = {
               inherit settings;
             };
