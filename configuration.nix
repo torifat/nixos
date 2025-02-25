@@ -68,6 +68,7 @@
     description = settings.name;
     isNormalUser = true;
     extraGroups = [
+      "audio"
       "i2c"
       "wheel"
       "networkmanager"
