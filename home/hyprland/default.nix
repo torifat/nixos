@@ -17,6 +17,7 @@ in
     ./configuration.nix
     ./rofi.nix
     ./waybar.nix
+    ./windowrules.nix
     ./hyprlock.nix
   ];
 

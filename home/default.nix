@@ -17,7 +17,6 @@
       pavucontrol
       obsidian
       # waybar dependency
-      font-awesome
       # wayland optimized Discord client
       vesktop
       # Todo app
@@ -28,7 +27,7 @@
       xfce.thunar
       # PDF Reader
       zathura
-      okular
+      kdePackages.okular
       # YubiKey app
       yubioath-flutter
       # Misc
@@ -38,8 +37,9 @@
       minesweep-rs
       ncdu
       google-chrome
+      monaspace
     ];
-    stateVersion = "24.05";
+    stateVersion = "25.05";
   };
 
   xdg = {
