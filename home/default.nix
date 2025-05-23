@@ -37,7 +37,10 @@
       minesweep-rs
       ncdu
       google-chrome
-      monaspace
+      zellij
+      tmux
+      prusa-slicer
+      nmap
     ];
     stateVersion = "25.05";
   };
