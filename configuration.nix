@@ -4,6 +4,7 @@
 { pkgs, settings, ... }:
 
 {
+
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -22,7 +23,6 @@
     hostName = settings.hostname;
     networkmanager.enable = true;
   };
-
   # Set your time zone.
   time.timeZone = settings.timeZone;
 
@@ -55,11 +55,6 @@
   };
   services.pcscd.enable = true;
 
-  hardware.enableAllFirmware = true;
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
 
@@ -71,6 +66,8 @@
       "audio"
       "i2c"
       "wheel"
+      "bluetooth"
+      "network"
       "networkmanager"
     ];
   };
@@ -78,9 +75,6 @@
   programs.git.enable = true;
   programs.lazygit.enable = true;
   programs.fzf.fuzzyCompletion = true;
-
-  # Alternatively, you could also just allow all unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   programs._1password.enable = true;
   programs._1password-gui = {

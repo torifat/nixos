@@ -47,7 +47,7 @@
 
   programs.lsd = {
     enable = true;
-    enableAliases = true;
+    enableZshIntegration = true;
     settings = {
       date = "relative";
       ignore-globs = [ ".git" ];

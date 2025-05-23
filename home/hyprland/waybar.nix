@@ -7,7 +7,7 @@
     systemd.enable = true;
     style = ''
       * {
-        font-family: "Monaspace Xeon, Symbols Nerd Font";
+        font-family: "Monaspace Xenon, Symbols Nerd Font";
       }
 
       #waybar {

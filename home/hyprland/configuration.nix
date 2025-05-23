@@ -19,7 +19,7 @@
       vrr = 1;
     };
 
-    monitor = [ ", highres, auto, 1" ];
+    monitor = [ ", preferred, auto, 1" ];
 
   };
 }
