@@ -41,6 +41,7 @@
       tmux
       prusa-slicer
       nmap
+      simple-scan
     ];
     stateVersion = "25.05";
   };
@@ -63,6 +64,7 @@
   programs.firefox = {
     enable = true;
   };
+  stylix.targets.firefox.profileNames = [ "default" ];
 
   programs.nix-index = {
     enable = true;
