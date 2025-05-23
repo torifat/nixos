@@ -11,6 +11,7 @@
     ./shell.nix
     ./utils.nix
     ./wooting.nix
+    ./printing.nix
   ];
 
   # Auto mount/unmount drive
