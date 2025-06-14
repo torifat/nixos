@@ -15,7 +15,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ghostty.url = "github:ghostty-org/ghostty";
     stylix.url = "github:danth/stylix";
     sddm-sugar-candy-nix.url = "gitlab:Zhaith-Izaliel/sddm-sugar-candy-nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
@@ -26,7 +25,6 @@
       nixpkgs,
       home-manager,
       disko,
-      ghostty,
       stylix,
       sddm-sugar-candy-nix,
       zen-browser,
@@ -65,7 +63,6 @@
           disko.nixosModules.disko
           {
             environment.systemPackages = [
-              ghostty.packages.${system}.default
               zen-browser.packages.${system}.default
             ];
           }
