@@ -69,6 +69,8 @@
       "bluetooth"
       "network"
       "networkmanager"
+      "scanner"
+      "lp"
     ];
   };
 
@@ -116,6 +118,7 @@
     nixfmt-rfc-style
     tldr
     btop
+    ghostty
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
