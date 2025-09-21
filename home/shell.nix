@@ -23,7 +23,7 @@
   programs.vivid = {
     enable = true;
     enableZshIntegration = true;
-    theme = "snazzy";
+    activeTheme = "snazzy";
   };
 
   programs.bat = {
