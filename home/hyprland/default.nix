@@ -24,7 +24,8 @@ in
   home.packages = with pkgs; [
     libnotify
     hyprpicker
-    libsForQt5.polkit-kde-agent
+    # libsForQt5.polkit-kde-agent
+    kdePackages.polkit-kde-agent-1
     # Screenshot
     grim
     slurp
@@ -63,7 +64,8 @@ in
     };
 
     Service = {
-      ExecStart = "${pkgs.libsForQt5.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1";
+      # ExecStart = "${pkgs.libsForQt5.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1";
+      ExecStart = "${pkgs.kdePackages.polkit-kde-agent-1}/libexec/polkit-kde-authentication-agent-1";
       BusName = "org.kde.polkit-kde-authentication-agent-1";
       Slice = "background.slice";
       TimeoutSec = "5sec";
