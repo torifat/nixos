@@ -12,6 +12,7 @@
     ./utils.nix
     ./wooting.nix
     ./printing.nix
+    ./mobile.nix
   ];
 
   # Auto mount/unmount drive

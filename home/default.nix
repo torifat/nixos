@@ -8,6 +8,7 @@
     ./shell.nix
     ./git.nix
     ./misc.nix
+    ./mobile.nix
   ];
 
   home = {
