@@ -111,6 +111,9 @@
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  nixpkgs.config.permittedInsecurePackages = [
+    "ventoy-1.1.05"
+  ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -119,6 +122,7 @@
     tldr
     btop
     ghostty
+    ventoy
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
