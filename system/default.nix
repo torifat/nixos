@@ -28,7 +28,7 @@
     fcitx5 = {
       addons = with pkgs; [
         fcitx5-m17n
-        fcitx5-openbangla-keyboard
+        # fcitx5-openbangla-keyboard
       ];
       waylandFrontend = true;
     };

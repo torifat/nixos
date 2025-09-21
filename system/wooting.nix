@@ -17,10 +17,9 @@
     # Wooting Two update mode
     SUBSYSTEM=="hidraw", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2403", TAG+="uaccess"
 
-    # Generic Wootings
+    # Generic Wooting devices
     SUBSYSTEM=="hidraw", ATTRS{idVendor}=="31e3", TAG+="uaccess"
     SUBSYSTEM=="usb", ATTRS{idVendor}=="31e3", TAG+="uaccess"
   '';
-
 }
 # vim:et:sw=2:ts=2:sta:nu
