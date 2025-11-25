@@ -15,6 +15,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    hyprland.url = "github:hyprwm/Hyprland";
     stylix.url = "github:danth/stylix";
     sddm-sugar-candy-nix.url = "gitlab:Zhaith-Izaliel/sddm-sugar-candy-nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
@@ -29,7 +30,7 @@
       sddm-sugar-candy-nix,
       zen-browser,
       ...
-    }:
+    }@inputs:
     let
       settings = import (./settings.nix) { };
       system = settings.system;
@@ -70,7 +71,7 @@
           sddm-sugar-candy-nix.nixosModules.default
         ];
         specialArgs = {
-          inherit settings;
+          inherit settings inputs;
         };
       };
     };
