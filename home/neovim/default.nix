@@ -47,6 +47,7 @@ in
     clang
     zig
     cargo
+    tree-sitter
   ];
 
   programs.fd = {
@@ -66,7 +67,6 @@ in
     plugins = with pkgs.vimPlugins; [
       lazy-nix-helper-nvim
       lazy-nvim
-      nvim-treesitter
     ];
 
     extraLuaConfig = ''
