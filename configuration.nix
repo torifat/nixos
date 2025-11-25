@@ -125,6 +125,19 @@
     ventoy
   ];
 
+  # Hibernate
+  boot.kernelParams = [ "resume_offset=${settings.swap.offset}" ];
+  boot.resumeDevice = "/dev/disk/by-uuid/${settings.swap.uuid}";
+
+  powerManagement.enable = true;
+
+  swapDevices = [
+    {
+      device = "/swapfile";
+      size = settings.swap.size;
+    }
+  ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
