@@ -111,9 +111,6 @@
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
-  nixpkgs.config.permittedInsecurePackages = [
-    "ventoy-1.1.07"
-  ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget

@@ -1,15 +1,5 @@
 { pkgs, ... }:
 
-let
-  vivid-glassy-dark-icon-theme = import ./vivid-glassy-dark-icon-theme.nix {
-    inherit (pkgs)
-      lib
-      fetchFromGitHub
-      stdenvNoCC
-      gtk3
-      ;
-  };
-in
 {
   imports = [
     ./env.nix
@@ -44,7 +34,7 @@ in
     };
 
     iconTheme = {
-      package = vivid-glassy-dark-icon-theme;
+      package = pkgs.vivid-plasma-themes;
       name = "vivid-glassy-dark-icon-theme";
     };
   };

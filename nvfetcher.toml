@@ -1,0 +1,10 @@
+[awakened-poe-trade]
+src.github_tag = "SnosMe/awakened-poe-trade"
+src.prefix = "v"                                                                                                    # remove prefix from version
+fetch.url = "https://github.com/SnosMe/awakened-poe-trade/releases/download/v$ver/Awakened-PoE-Trade-$ver.AppImage"
+
+[vivid-plasma-themes]
+src.git = "https://github.com/L4ki/Vivid-Plasma-Themes.git"
+src.use_commit = true
+src.branch = "main"
+fetch.git = "https://github.com/L4ki/Vivid-Plasma-Themes.git"

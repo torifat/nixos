@@ -1,23 +1,14 @@
 {
   lib,
-  fetchFromGitHub,
-  stdenvNoCC,
+  stdenv,
   gtk3,
+  mySource,
   ...
 }:
-stdenvNoCC.mkDerivation rec {
-  pname = "vivid-glassy-dark-icon-theme";
-  version = "unstable-07.09.2024";
-
-  src = fetchFromGitHub {
-    owner = "L4ki";
-    repo = "Vivid-Plasma-Themes";
-    rev = "main";
-    hash = "sha256-GQ88eNY1UxNHHhOa9KEvOkN6Q7B/Q3qeUy58sjvVkUQ=";
-  };
+stdenv.mkDerivation rec {
+  inherit (mySource) pname version src;
 
   nativeBuildInputs = [ gtk3 ];
-
   dontDropIconThemeCache = true;
 
   installPhase = ''
