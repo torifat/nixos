@@ -13,6 +13,7 @@
     ./wooting.nix
     ./printing.nix
     ./mobile.nix
+    ./mouse.nix
   ];
 
   # Auto mount/unmount drive

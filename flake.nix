@@ -19,6 +19,10 @@
     stylix.url = "github:danth/stylix";
     sddm-sugar-candy-nix.url = "gitlab:Zhaith-Izaliel/sddm-sugar-candy-nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    solarr = {
+      url = "https://flakehub.com/f/Svenum/Solaar-Flake/*.tar.gz";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -30,6 +34,7 @@
       stylix,
       sddm-sugar-candy-nix,
       zen-browser,
+      solarr,
       ...
     }@inputs:
     let
@@ -92,6 +97,7 @@
           inherit system;
           pkgs = pkgs;
           modules = [
+            solarr.nixosModules.default
             ./configuration.nix
             home-manager.nixosModules.home-manager
             {
