@@ -3,13 +3,17 @@
 {
   programs.git = {
     enable = true;
-    userName = settings.name;
-    userEmail = settings.email;
-    aliases = {
-      s = "status";
-      sw = "switch";
-      ci = "commit";
-      co = "checkout";
+    settings = {
+      user = {
+        name = settings.name;
+        email = settings.email;
+      };
+      alias = {
+        s = "status";
+        sw = "switch";
+        ci = "commit";
+        co = "checkout";
+      };
     };
   };
 
