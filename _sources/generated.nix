@@ -3,24 +3,32 @@
 {
   awakened-poe-trade = {
     pname = "awakened-poe-trade";
-    version = "3.27.105";
+    version = "3.27.106";
     src = fetchurl {
-      url = "https://github.com/SnosMe/awakened-poe-trade/releases/download/v3.27.105/Awakened-PoE-Trade-3.27.105.AppImage";
-      sha256 = "sha256-XEnxDo8Njt/r7tmRxbKMNKqG/YUlc59TJY/7mjiOyXE=";
+      url = "https://github.com/SnosMe/awakened-poe-trade/releases/download/v3.27.106/Awakened-PoE-Trade-3.27.106.AppImage";
+      sha256 = "sha256-8L5Szn0KYfUMaTe+yyhJV1YZspmJCSlXSHXLPoiRhjE=";
+    };
+  };
+  exiled-exchange-2 = {
+    pname = "exiled-exchange-2";
+    version = "0.12.8";
+    src = fetchurl {
+      url = "https://github.com/Kvan7/Exiled-Exchange-2/releases/download/v0.12.8/Exiled-Exchange-2-0.12.8.AppImage";
+      sha256 = "sha256-hGUmwyhFsM+8XTrFCuaLVYAA85jwrKCftkQ/wlViRHI=";
     };
   };
   vivid-plasma-themes = {
     pname = "vivid-plasma-themes";
-    version = "cc20e7b72c2e9c05d7a7a5345f85eb4eba20e565";
+    version = "e8d4cf6517ea94335c57ba17d37c8824174d0f83";
     src = fetchgit {
       url = "https://github.com/L4ki/Vivid-Plasma-Themes.git";
-      rev = "cc20e7b72c2e9c05d7a7a5345f85eb4eba20e565";
+      rev = "e8d4cf6517ea94335c57ba17d37c8824174d0f83";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-gAD7C7vOEI4yL+eX1410f/VkfQQ7t+oreypaU+Md1Vc=";
+      sha256 = "sha256-Zj/0bDItQ5jBY504oaVONrBo1d8HZFbB0FAFwl2zlaQ=";
     };
-    date = "2025-11-24";
+    date = "2025-12-08";
   };
 }

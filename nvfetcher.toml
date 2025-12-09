@@ -8,3 +8,8 @@ src.git = "https://github.com/L4ki/Vivid-Plasma-Themes.git"
 src.use_commit = true
 src.branch = "main"
 fetch.git = "https://github.com/L4ki/Vivid-Plasma-Themes.git"
+
+[exiled-exchange-2]
+src.github_tag = "Kvan7/Exiled-Exchange-2"
+src.prefix = "v"                                                                                                    # remove prefix from version
+fetch.url = "https://github.com/Kvan7/Exiled-Exchange-2/releases/download/v$ver/Exiled-Exchange-2-$ver.AppImage"
