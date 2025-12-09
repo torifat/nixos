@@ -3,11 +3,12 @@
 {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
-      "zen"
       "ghostty"
       "1password --silent"
       # Input Method Daemon
       "fcitx5 -d"
+      "steam -silent -no-browser"
+      "google-chrome-stable --restore-last-session"
     ];
 
     input = {
