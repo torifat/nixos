@@ -112,17 +112,6 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    nixfmt-rfc-style
-    tldr
-    btop
-    ghostty
-    ventoy
-  ];
-
-  # Hibernate
   boot.kernelParams = [ "resume_offset=${settings.swap.offset}" ];
   boot.resumeDevice = "/dev/disk/by-uuid/${settings.swap.uuid}";
 

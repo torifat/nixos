@@ -19,15 +19,17 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.exportConfiguration = true;
-  services.xserver.excludePackages = [ pkgs.xterm ];
+  services.xserver = {
+    enable = true;
+    exportConfiguration = true;
+    excludePackages = [ pkgs.xterm ];
+  };
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
   services.displayManager.sddm = {
-    enable = true;
+    enable = false;
     enableHidpi = true;
     wayland.enable = true;
     sugarCandyNix = {
@@ -50,6 +52,8 @@
       };
     };
   };
+
+  services.desktopManager.plasma6.enable = true;
 
   environment.systemPackages = with pkgs; [
     libsForQt5.qt5.qtgraphicaleffects

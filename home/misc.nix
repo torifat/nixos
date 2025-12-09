@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    kicad
+    # kicad
   ];
 }
 # vim:et:sw=2:ts=2:sta:nu

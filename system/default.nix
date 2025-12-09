@@ -16,6 +16,19 @@
     ./mouse.nix
   ];
 
+  # List packages installed in system profile. To search, run:
+  # $ nix search wget
+  environment.systemPackages = with pkgs; [
+    nixfmt-rfc-style
+    tldr
+    btop
+    ghostty
+    ventoy
+    nvfetcher
+  ];
+
+  # Hibernate
+
   # Auto mount/unmount drive
   services = {
     devmon.enable = true;
