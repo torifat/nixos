@@ -11,10 +11,21 @@
   };
   exiled-exchange-2 = {
     pname = "exiled-exchange-2";
-    version = "0.12.8";
+    version = "0.13.8";
     src = fetchurl {
-      url = "https://github.com/Kvan7/Exiled-Exchange-2/releases/download/v0.12.8/Exiled-Exchange-2-0.12.8.AppImage";
-      sha256 = "sha256-hGUmwyhFsM+8XTrFCuaLVYAA85jwrKCftkQ/wlViRHI=";
+      url = "https://github.com/Kvan7/Exiled-Exchange-2/releases/download/v0.13.8/Exiled-Exchange-2-0.13.8.AppImage";
+      sha256 = "sha256-jA/VXMi+VJmRcHRBgnt71PLvGrSBe2S2KmUtrQlIFjk=";
+    };
+  };
+  rusty-path-of-building = {
+    pname = "rusty-path-of-building";
+    version = "v0.2.10";
+    src = fetchFromGitHub {
+      owner = "meehl";
+      repo = "rusty-path-of-building";
+      rev = "v0.2.10";
+      fetchSubmodules = false;
+      sha256 = "sha256-odiiYWoBfcnPNfXsxj0gt/ra6Z3zeBQdWRjF7BazffY=";
     };
   };
   vivid-plasma-themes = {

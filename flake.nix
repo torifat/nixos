@@ -71,9 +71,10 @@
               let
                 pkg = import (pkgDir + "/${name}");
 
-                override = builtins.intersectAttrs (builtins.functionArgs pkg) ({
+                override = builtins.intersectAttrs (builtins.functionArgs pkg) {
                   mySource = prev.sources.${name} or null;
-                });
+                  basePackage = prev.${name} or null;
+                };
               in
               final.callPackage pkg override
             )
