@@ -84,6 +84,7 @@
     # Certain features, including CLI integration and system authentication support,
     # require enabling PolKit integration on some desktop environments (e.g. Plasma).
     polkitPolicyOwners = [ settings.username ];
+    package = pkgs._1password-gui-beta;
   };
 
   environment.etc = {

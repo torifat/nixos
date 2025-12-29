@@ -1,9 +1,9 @@
-{ ... }:
+{ lib, ... }:
 
 {
   qt = {
     enable = true;
-    platformTheme = "kde";
+    platformTheme = lib.mkForce "qt5ct";
     # style = "adwaita";
   };
 }
