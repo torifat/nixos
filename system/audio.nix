@@ -12,6 +12,13 @@
     wireplumber.enable = true;
     # Make sure PipeWire handles audio
     audio.enable = true;
+    extraConfig.pipewire."99-custom" = {
+      "context.properties" = {
+        default.clock = {
+          min-quantum = 1024;
+        };
+      };
+    };
   };
 
   # Disable PulseAudio server if using PipeWire's PulseAudio layer
