@@ -3,7 +3,7 @@
 {
   # Enable CUPS to print documents.
   services.printing = {
-    enable = true;
+    enable = false;
     # Canon PIXMA TS3400
     drivers = [ pkgs.cnijfilter2 ];
   };

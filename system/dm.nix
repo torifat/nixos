@@ -11,6 +11,7 @@
   # programs.uwsm.enable = true;
   programs.hyprland = {
     enable = true;
+    withUWSM = true;
     # set the flake package
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     # make sure to also set the portal package, so that they are in sync
@@ -29,22 +30,22 @@
   # services.xserver.xkb.layout = "us";
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
   services.displayManager.sddm = {
-    enable = false;
+    enable = true;
     enableHidpi = true;
     wayland.enable = true;
-    sugarCandyNix = {
-      enable = true;
-      settings = {
-        AccentColor = "#${config.stylix.base16Scheme.base0B}";
-        Background = lib.cleanSource settings.lockscreen;
-        FormPosition = "left";
-        HaveFormBackground = true;
-        PartialBlur = true;
-        ScreenWidth = 2560;
-        ScreenHeight = 1440;
-        RoundCorners = 5;
-      };
-    };
+    # sugarCandyNix = {
+    #   enable = true;
+    #   settings = {
+    #     AccentColor = "#${config.stylix.base16Scheme.base0B}";
+    #     Background = lib.cleanSource settings.lockscreen;
+    #     FormPosition = "left";
+    #     HaveFormBackground = true;
+    #     PartialBlur = true;
+    #     ScreenWidth = 2560;
+    #     ScreenHeight = 1440;
+    #     RoundCorners = 5;
+    #   };
+    # };
     settings = {
       Theme = {
         CursorTheme = "catppuccin-mocha-dark-cursors";
@@ -53,7 +54,7 @@
     };
   };
 
-  services.desktopManager.plasma6.enable = true;
+  # services.desktopManager.plasma6.enable = true;
 
   environment.systemPackages = with pkgs; [
     libsForQt5.qt5.qtgraphicaleffects

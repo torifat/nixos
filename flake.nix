@@ -87,9 +87,6 @@
           system = settings.system;
           overlays = [ self.overlays.default ];
           config.allowUnfree = true;
-          config.permittedInsecurePackages = [
-            "ventoy-1.1.07"
-          ];
         };
       in
       {
