@@ -25,7 +25,7 @@
       # Markdown reader
       glow
       # File manager
-      xfce.thunar
+      thunar
       # PDF Reader
       zathura
       kdePackages.okular

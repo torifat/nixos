@@ -2,7 +2,6 @@
 
 {
   programs = {
-    adb.enable = true;
     kdeconnect.enable = true;
   };
 
@@ -17,6 +16,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    android-tools
     localsend
   ];
 }

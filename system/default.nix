@@ -23,7 +23,6 @@
     tldr
     btop
     ghostty
-    ventoy
     nvfetcher
   ];
 
