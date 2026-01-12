@@ -29,6 +29,27 @@
         },
         "version": "0.13.8"
     },
+    "niri": {
+        "cargoLocks": null,
+        "date": "2026-01-07",
+        "extract": null,
+        "name": "niri",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "YaLTeR",
+            "repo": "niri",
+            "rev": "9f8eadc5bc04994f395832e7135693f87aa899a9",
+            "sha256": "sha256-fVm1HagOXtYztYbYBfP8/RfeKFNDB4/LIMF6zQfntNY=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "9f8eadc5bc04994f395832e7135693f87aa899a9"
+    },
     "rusty-path-of-building": {
         "cargoLocks": null,
         "date": null,

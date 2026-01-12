@@ -17,6 +17,18 @@
       sha256 = "sha256-jA/VXMi+VJmRcHRBgnt71PLvGrSBe2S2KmUtrQlIFjk=";
     };
   };
+  niri = {
+    pname = "niri";
+    version = "9f8eadc5bc04994f395832e7135693f87aa899a9";
+    src = fetchFromGitHub {
+      owner = "YaLTeR";
+      repo = "niri";
+      rev = "9f8eadc5bc04994f395832e7135693f87aa899a9";
+      fetchSubmodules = false;
+      sha256 = "sha256-fVm1HagOXtYztYbYBfP8/RfeKFNDB4/LIMF6zQfntNY=";
+    };
+    date = "2026-01-07";
+  };
   rusty-path-of-building = {
     pname = "rusty-path-of-building";
     version = "v0.2.10";

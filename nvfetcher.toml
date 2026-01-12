@@ -17,3 +17,7 @@ src.git = "https://github.com/L4ki/Vivid-Plasma-Themes.git"
 src.use_commit = true
 src.branch = "main"
 fetch.git = "https://github.com/L4ki/Vivid-Plasma-Themes.git"
+
+[niri]
+src.git = "https://github.com/YaLTeR/niri"
+fetch.github = "YaLTeR/niri"

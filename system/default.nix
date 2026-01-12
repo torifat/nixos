@@ -24,6 +24,7 @@
     btop
     ghostty
     nvfetcher
+    niri
   ];
 
   # Hibernate
