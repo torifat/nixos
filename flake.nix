@@ -17,7 +17,6 @@
 
     hyprland.url = "github:hyprwm/Hyprland";
     stylix.url = "github:danth/stylix";
-    sddm-sugar-candy-nix.url = "gitlab:Zhaith-Izaliel/sddm-sugar-candy-nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     solarr = {
       url = "https://flakehub.com/f/Svenum/Solaar-Flake/*.tar.gz";
@@ -32,7 +31,6 @@
       home-manager,
       disko,
       stylix,
-      sddm-sugar-candy-nix,
       zen-browser,
       solarr,
       ...
@@ -122,7 +120,6 @@
               ];
             }
             stylix.nixosModules.stylix
-            sddm-sugar-candy-nix.nixosModules.default
           ];
           specialArgs = {
             inherit settings inputs;

@@ -48,7 +48,8 @@
     pam.services = {
       login.u2fAuth = true;
       sudo.u2fAuth = true;
-      sddm = {
+      ly = {
+        u2fAuth = true;
         enableGnomeKeyring = true;
       };
     };
