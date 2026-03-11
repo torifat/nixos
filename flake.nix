@@ -90,7 +90,7 @@
         };
       in
       {
-        formatter.${system} = pkgs.nixfmt-rfc-style;
+        formatter.${system} = pkgs.nixfmt;
         nixosConfigurations.lovelace = nixpkgs.lib.nixosSystem {
           inherit system;
           pkgs = pkgs;

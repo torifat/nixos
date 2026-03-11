@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-8L5Szn0KYfUMaTe+yyhJV1YZspmJCSlXSHXLPoiRhjE=",
+            "sha256": "sha256-Pm6vdDTxjd8pCegnvVRkbN1LIarC2LgJ91dpWPE38q4=",
             "type": "url",
-            "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v3.27.106/Awakened-PoE-Trade-3.27.106.AppImage"
+            "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v3.28.101/Awakened-PoE-Trade-3.28.101.AppImage"
         },
-        "version": "3.27.106"
+        "version": "3.28.101"
     },
     "exiled-exchange-2": {
         "cargoLocks": null,
@@ -23,15 +23,15 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-jA/VXMi+VJmRcHRBgnt71PLvGrSBe2S2KmUtrQlIFjk=",
+            "sha256": "sha256-mQNUJptaObbEMtBLCgJn7A6nmgVpl4o0JWTg6FH20U0=",
             "type": "url",
-            "url": "https://github.com/Kvan7/Exiled-Exchange-2/releases/download/v0.13.8/Exiled-Exchange-2-0.13.8.AppImage"
+            "url": "https://github.com/Kvan7/Exiled-Exchange-2/releases/download/v0.13.10/Exiled-Exchange-2-0.13.10.AppImage"
         },
-        "version": "0.13.8"
+        "version": "0.13.10"
     },
     "niri": {
         "cargoLocks": null,
-        "date": "2026-01-07",
+        "date": "2026-03-07",
         "extract": null,
         "name": "niri",
         "passthru": null,
@@ -43,12 +43,12 @@
             "name": null,
             "owner": "YaLTeR",
             "repo": "niri",
-            "rev": "9f8eadc5bc04994f395832e7135693f87aa899a9",
-            "sha256": "sha256-fVm1HagOXtYztYbYBfP8/RfeKFNDB4/LIMF6zQfntNY=",
+            "rev": "8f75d171b6017ed34043b1255ec4ffc374bf6ab0",
+            "sha256": "sha256-T1igKylw0ZX8+yws4dWbkrSc+hZ1bmsM+Tjs4lxMYgo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9f8eadc5bc04994f395832e7135693f87aa899a9"
+        "version": "8f75d171b6017ed34043b1255ec4ffc374bf6ab0"
     },
     "rusty-path-of-building": {
         "cargoLocks": null,
@@ -64,16 +64,31 @@
             "name": null,
             "owner": "meehl",
             "repo": "rusty-path-of-building",
-            "rev": "v0.2.10",
-            "sha256": "sha256-odiiYWoBfcnPNfXsxj0gt/ra6Z3zeBQdWRjF7BazffY=",
+            "rev": "v0.2.11",
+            "sha256": "sha256-oDhapNQ5yiZFolI7ChDC7SjPkmkeUAutRmQt/AorStA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.2.10"
+        "version": "v0.2.11"
+    },
+    "tdarr-node": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "tdarr-node",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-8L/xNQuzuVw9GT1v9n7DjKRzNRVSQ1DZCM5PBxJXtPU=",
+            "type": "url",
+            "url": "https://storage.tdarr.io/versions/2.61.01/linux_x64/Tdarr_Node.zip"
+        },
+        "version": "2.61.01"
     },
     "vivid-plasma-themes": {
         "cargoLocks": null,
-        "date": "2025-12-08",
+        "date": "2026-01-29",
         "extract": null,
         "name": "vivid-plasma-themes",
         "passthru": null,
@@ -83,12 +98,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "e8d4cf6517ea94335c57ba17d37c8824174d0f83",
-            "sha256": "sha256-Zj/0bDItQ5jBY504oaVONrBo1d8HZFbB0FAFwl2zlaQ=",
+            "rev": "598e24d41b1a040620e81e971020e32fa9480944",
+            "sha256": "sha256-Qr3NYqtjdlULRPzPw0N8ff6feAGpN63/PB2hm+srylM=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/L4ki/Vivid-Plasma-Themes.git"
         },
-        "version": "e8d4cf6517ea94335c57ba17d37c8824174d0f83"
+        "version": "598e24d41b1a040620e81e971020e32fa9480944"
     }
 }

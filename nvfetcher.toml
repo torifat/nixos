@@ -21,3 +21,7 @@ fetch.git = "https://github.com/L4ki/Vivid-Plasma-Themes.git"
 [niri]
 src.git = "https://github.com/YaLTeR/niri"
 fetch.github = "YaLTeR/niri"
+
+[tdarr-node]
+src.cmd = "curl https://storage.tdarr.io/versions.json | jq -r 'to_entries[0].key'"
+fetch.url = "https://storage.tdarr.io/versions/$ver/linux_x64/Tdarr_Node.zip"

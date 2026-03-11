@@ -14,6 +14,8 @@
     ./printing.nix
     ./mobile.nix
     ./mouse.nix
+    ./nfs.nix
+    ./tdarr-node.nix
   ];
 
   # List packages installed in system profile. To search, run:
@@ -25,6 +27,10 @@
     ghostty
     nvfetcher
     niri
+    jq
+    tdarr-node
+    claude-code
+    lmstudio
   ];
 
   # Hibernate

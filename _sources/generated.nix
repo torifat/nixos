@@ -3,55 +3,63 @@
 {
   awakened-poe-trade = {
     pname = "awakened-poe-trade";
-    version = "3.27.106";
+    version = "3.28.101";
     src = fetchurl {
-      url = "https://github.com/SnosMe/awakened-poe-trade/releases/download/v3.27.106/Awakened-PoE-Trade-3.27.106.AppImage";
-      sha256 = "sha256-8L5Szn0KYfUMaTe+yyhJV1YZspmJCSlXSHXLPoiRhjE=";
+      url = "https://github.com/SnosMe/awakened-poe-trade/releases/download/v3.28.101/Awakened-PoE-Trade-3.28.101.AppImage";
+      sha256 = "sha256-Pm6vdDTxjd8pCegnvVRkbN1LIarC2LgJ91dpWPE38q4=";
     };
   };
   exiled-exchange-2 = {
     pname = "exiled-exchange-2";
-    version = "0.13.8";
+    version = "0.13.10";
     src = fetchurl {
-      url = "https://github.com/Kvan7/Exiled-Exchange-2/releases/download/v0.13.8/Exiled-Exchange-2-0.13.8.AppImage";
-      sha256 = "sha256-jA/VXMi+VJmRcHRBgnt71PLvGrSBe2S2KmUtrQlIFjk=";
+      url = "https://github.com/Kvan7/Exiled-Exchange-2/releases/download/v0.13.10/Exiled-Exchange-2-0.13.10.AppImage";
+      sha256 = "sha256-mQNUJptaObbEMtBLCgJn7A6nmgVpl4o0JWTg6FH20U0=";
     };
   };
   niri = {
     pname = "niri";
-    version = "9f8eadc5bc04994f395832e7135693f87aa899a9";
+    version = "8f75d171b6017ed34043b1255ec4ffc374bf6ab0";
     src = fetchFromGitHub {
       owner = "YaLTeR";
       repo = "niri";
-      rev = "9f8eadc5bc04994f395832e7135693f87aa899a9";
+      rev = "8f75d171b6017ed34043b1255ec4ffc374bf6ab0";
       fetchSubmodules = false;
-      sha256 = "sha256-fVm1HagOXtYztYbYBfP8/RfeKFNDB4/LIMF6zQfntNY=";
+      sha256 = "sha256-T1igKylw0ZX8+yws4dWbkrSc+hZ1bmsM+Tjs4lxMYgo=";
     };
-    date = "2026-01-07";
+    date = "2026-03-07";
   };
   rusty-path-of-building = {
     pname = "rusty-path-of-building";
-    version = "v0.2.10";
+    version = "v0.2.11";
     src = fetchFromGitHub {
       owner = "meehl";
       repo = "rusty-path-of-building";
-      rev = "v0.2.10";
+      rev = "v0.2.11";
       fetchSubmodules = false;
-      sha256 = "sha256-odiiYWoBfcnPNfXsxj0gt/ra6Z3zeBQdWRjF7BazffY=";
+      sha256 = "sha256-oDhapNQ5yiZFolI7ChDC7SjPkmkeUAutRmQt/AorStA=";
+    };
+  };
+  tdarr-node = {
+    pname = "tdarr-node";
+    version = "2.61.01";
+    src = fetchurl {
+      url = "https://storage.tdarr.io/versions/2.61.01/linux_x64/Tdarr_Node.zip";
+      sha256 = "sha256-8L/xNQuzuVw9GT1v9n7DjKRzNRVSQ1DZCM5PBxJXtPU=";
     };
   };
   vivid-plasma-themes = {
     pname = "vivid-plasma-themes";
-    version = "e8d4cf6517ea94335c57ba17d37c8824174d0f83";
+    version = "598e24d41b1a040620e81e971020e32fa9480944";
     src = fetchgit {
       url = "https://github.com/L4ki/Vivid-Plasma-Themes.git";
-      rev = "e8d4cf6517ea94335c57ba17d37c8824174d0f83";
+      rev = "598e24d41b1a040620e81e971020e32fa9480944";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Zj/0bDItQ5jBY504oaVONrBo1d8HZFbB0FAFwl2zlaQ=";
+      sha256 = "sha256-Qr3NYqtjdlULRPzPw0N8ff6feAGpN63/PB2hm+srylM=";
     };
-    date = "2025-12-08";
+    date = "2026-01-29";
   };
 }

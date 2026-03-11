@@ -71,6 +71,7 @@
       "networkmanager"
       "scanner"
       "lp"
+      "docker"
     ];
   };
 
