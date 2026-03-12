@@ -2,11 +2,11 @@
 
 {
   wayland.windowManager.hyprland.settings = {
-    windowrulev2 = [
-      "tag +poe, title:(Path of Exile)"
-      "tag +poe, class:(steam_app_238960)"
-      "workspace 4, tag:poe"
-      "fullscreen, tag:poe"
+    windowrule = [
+      # "tag +poe, title:(Path of Exile)"
+      # "tag +poe, class:(steam_app_238960)"
+      # "workspace 4, tag:poe"
+      # "fullscreen, tag:poe"
 
       # "float, title:^(Picture-in-Picture)$"
       # "pin, title:^(Picture-in-Picture)$"
@@ -52,7 +52,7 @@
       # "move 0 0, tag:apt"
       # "stayfocused, class:(steam_app_2694490)"
 
-      "workspace 2, class:(steam)"
+      # "workspace 2, class:(steam)"
     ];
   };
 }
