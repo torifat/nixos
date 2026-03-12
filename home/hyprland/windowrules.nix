@@ -2,6 +2,8 @@
 
 {
   wayland.windowManager.hyprland.settings = {
+    # TODO: Disabled during last package bump. These fail with newer Hyprland
+    # after the windowrulev2 -> windowrule migration. Re-enable once fixed.
     windowrule = [
       # "tag +poe, title:(Path of Exile)"
       # "tag +poe, class:(steam_app_238960)"

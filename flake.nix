@@ -36,48 +36,11 @@
       ...
     }@inputs:
     let
-      genPkg = f: name: {
-        inherit name;
-        value = f name;
-      };
       settings = import (./settings.nix) { };
-      pkgDir = ./packages;
-      generated = import ./_sources/generated.nix;
-      broken = import ./broken.nix;
       system = settings.system;
-      names = with builtins; nixpkgs.lib.subtractLists broken (attrNames (readDir pkgDir));
-      withContents = f: with builtins; listToAttrs (map (genPkg f) names);
     in
     {
-      overlays.default =
-        final: prev:
-        prev.lib.composeManyExtensions [
-          (final: prev: {
-            sources = generated {
-              inherit (final)
-                fetchurl
-                fetchgit
-                fetchFromGitHub
-                dockerTools
-                ;
-            };
-          })
-          (
-            final: prev:
-            withContents (
-              name:
-              let
-                pkg = import (pkgDir + "/${name}");
-
-                override = builtins.intersectAttrs (builtins.functionArgs pkg) {
-                  mySource = prev.sources.${name} or null;
-                  basePackage = prev.${name} or null;
-                };
-              in
-              final.callPackage pkg override
-            )
-          )
-        ] final prev;
+      overlays.default = import ./overlays.nix;
     }
     // (
       let

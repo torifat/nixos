@@ -7,7 +7,7 @@
     loader = {
       systemd-boot = {
         enable = true;
-        # configurationLimit = 5;
+        configurationLimit = 5;
         consoleMode = "auto";
       };
       timeout = 3;
@@ -20,11 +20,8 @@
       "quiet"
       "udev.log_level=3"
     ];
-    # Boot theme
-    plymouth = {
-      enable = true;
-      #   theme = "breeze";
-    };
+    # Boot theme (theme is managed by Stylix)
+    plymouth.enable = true;
   };
 }
 # vim:et:sw=2:ts=2:sta:nu

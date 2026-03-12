@@ -69,7 +69,7 @@ in
       lazy-nvim
     ];
 
-    extraLuaConfig = ''
+    initLua = ''
       local plugins = {
       ${pluginList config.programs.neovim.plugins}
       }
@@ -100,6 +100,7 @@ in
     '';
   };
 
+  # TODO: Alternative approach to manage neovim config via xdg.configFile
   # xdg.configFile = {
   #   "nvim" = {
   #     source = ./lazyvim;

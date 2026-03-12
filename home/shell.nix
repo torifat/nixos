@@ -28,7 +28,7 @@
 
   programs.bat = {
     enable = true;
-    #  Currently broken
+    # TODO: Currently broken, re-enable when bat-extras is fixed upstream
     # extraPackages = with pkgs.bat-extras; [
     #   # Quickly search through and highlight files using ripgrep.
     #   batgrep
