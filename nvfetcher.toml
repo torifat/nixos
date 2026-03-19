@@ -8,10 +8,6 @@ src.github_tag = "Kvan7/Exiled-Exchange-2"
 src.prefix = "v"
 fetch.url = "https://github.com/Kvan7/Exiled-Exchange-2/releases/download/v$ver/Exiled-Exchange-2-$ver.AppImage"
 
-[rusty-path-of-building]
-src.github_tag = "meehl/rusty-path-of-building"
-fetch.github = "meehl/rusty-path-of-building"
-
 [vivid-plasma-themes]
 src.git = "https://github.com/L4ki/Vivid-Plasma-Themes.git"
 src.use_commit = true
