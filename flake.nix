@@ -16,12 +16,17 @@
     };
 
     hyprland.url = "github:hyprwm/Hyprland";
+    ags = {
+      url = "github:aylur/ags";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     stylix.url = "github:danth/stylix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     solarr = {
       url = "https://flakehub.com/f/Svenum/Solaar-Flake/*.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    flakes.url = "github:torifat/flakes";
   };
 
   outputs =
@@ -33,6 +38,7 @@
       stylix,
       zen-browser,
       solarr,
+      flakes,
       ...
     }@inputs:
     let
@@ -46,7 +52,10 @@
       let
         pkgs = import nixpkgs {
           system = settings.system;
-          overlays = [ self.overlays.default ];
+          overlays = [
+            flakes.overlays.default
+            self.overlays.default
+          ];
           config.allowUnfree = true;
         };
       in
@@ -65,7 +74,7 @@
               home-manager.users.${settings.username} = import ./home;
               home-manager.backupFileExtension = "backup";
               home-manager.extraSpecialArgs = {
-                inherit settings;
+                inherit settings inputs;
               };
             }
             {
