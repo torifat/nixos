@@ -1,21 +1,6 @@
 {
-    "awakened-poe-trade": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "awakened-poe-trade",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-Pm6vdDTxjd8pCegnvVRkbN1LIarC2LgJ91dpWPE38q4=",
-            "type": "url",
-            "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v3.28.101/Awakened-PoE-Trade-3.28.101.AppImage"
-        },
-        "version": "3.28.101"
-    },
     "exiled-exchange-2": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "exiled-exchange-2",
@@ -30,8 +15,8 @@
         "version": "0.13.10"
     },
     "niri": {
-        "cargoLocks": null,
-        "date": "2026-03-07",
+        "cargoLock": null,
+        "date": "2026-03-10",
         "extract": null,
         "name": "niri",
         "passthru": null,
@@ -43,36 +28,15 @@
             "name": null,
             "owner": "YaLTeR",
             "repo": "niri",
-            "rev": "8f75d171b6017ed34043b1255ec4ffc374bf6ab0",
-            "sha256": "sha256-T1igKylw0ZX8+yws4dWbkrSc+hZ1bmsM+Tjs4lxMYgo=",
+            "rev": "b07bde3ee82dd73115e6b949e4f3f63695da35ea",
+            "sha256": "sha256-3bwx4WqCB06yfQIGB+OgIckOkEDyKxiTD5pOo4Xz2rI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "8f75d171b6017ed34043b1255ec4ffc374bf6ab0"
-    },
-    "rusty-path-of-building": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "rusty-path-of-building",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "meehl",
-            "repo": "rusty-path-of-building",
-            "rev": "v0.2.11",
-            "sha256": "sha256-oDhapNQ5yiZFolI7ChDC7SjPkmkeUAutRmQt/AorStA=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v0.2.11"
+        "version": "b07bde3ee82dd73115e6b949e4f3f63695da35ea"
     },
     "tdarr-node": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "tdarr-node",
@@ -80,14 +44,14 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-8L/xNQuzuVw9GT1v9n7DjKRzNRVSQ1DZCM5PBxJXtPU=",
+            "sha256": "sha256-o6nqeJAzXWSkIoYJFeoqPsHHrNGqKzuyF0NPivDQnSg=",
             "type": "url",
-            "url": "https://storage.tdarr.io/versions/2.61.01/linux_x64/Tdarr_Node.zip"
+            "url": "https://storage.tdarr.io/versions/2.64.02/linux_x64/Tdarr_Node.zip"
         },
-        "version": "2.61.01"
+        "version": "2.64.02"
     },
     "vivid-plasma-themes": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2026-01-29",
         "extract": null,
         "name": "vivid-plasma-themes",
