@@ -25,6 +25,7 @@
 
       # Screenshots
       "CTRL SHIFT, 4, exec, grim -g \"$(slurp)\" - | wl-copy"
+      "ALT SHIFT, 4, exec, grim -g \"$(slurp)\" - | wl-copy"
       "CTRL SHIFT, 3, exec, grim - | wl-copy"
 
       # Move window focus with vim keys
@@ -50,9 +51,11 @@
 
       "$mod SHIFT, SPACE, exec, hyprctl switchxkblayout current next"
 
+      # Exiled Exchange 2
       "SHIFT, SPACE, pass, title:^(exiled-exchange-2)$"
       "CTRL, D, pass, class:^(exiled-exchange-2)$"
       "CTRL ALT, D, pass, class:^(exiled-exchange-2)$"
+
     ]
     ++ (
       # Workspaces

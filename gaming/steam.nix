@@ -17,7 +17,21 @@
     "gamemode"
   ];
 
-  programs.gamemode.enable = true;
+  programs.gamemode = {
+    enable = true;
+    settings = {
+      general = {
+        renice = 10;
+        softrealtime = "auto";
+        inhibit_screensaver = 0;
+      };
+      gpu = {
+        apply_gpu_optimisations = "accept-responsibility";
+        gpu_device = 0;
+        nv_powermizer_mode = 1;
+      };
+    };
+  };
 
   environment.systemPackages = with pkgs; [ mangohud ];
 }

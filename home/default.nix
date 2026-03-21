@@ -8,6 +8,7 @@
     ./shell.nix
     ./git.nix
     ./mobile.nix
+    ./gaming/poe.nix
   ];
 
   home = {

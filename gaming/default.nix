@@ -7,6 +7,7 @@
     ./steam.nix
     ./nvidia.nix
     ./android.nix
+    ./performance.nix
   ];
 
   programs.gamescope.enable = true;

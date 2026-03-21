@@ -35,6 +35,9 @@
 
       # For Electron apps
       NIXOS_OZONE_WL = "1";
+
+      # Disable shader disk cache size limit (PoE has many shaders)
+      "__GL_SHADER_DISK_CACHE_SKIP_CLEANUP" = "1";
     };
   };
 
