@@ -10,7 +10,7 @@
     # No configDir — ArchEclipse needs a writable ~/.config/ags for cache/settings.
     # Copy manually: cp -r /path/to/nixos/home/hyprland/ags ~/.config/ags
 
-    extraPackages = with inputs.ags.packages.${pkgs.system}; [
+    extraPackages = with inputs.ags.packages.${pkgs.stdenv.hostPlatform.system}; [
       hyprland
       wireplumber
       tray
