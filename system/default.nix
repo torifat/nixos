@@ -31,6 +31,7 @@
     tdarr-node
     claude-code
     lmstudio
+    imagemagick
   ];
 
   # Hibernate

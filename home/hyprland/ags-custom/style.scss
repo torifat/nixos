@@ -1,0 +1,180 @@
+// Catppuccin Mocha (from stylix)
+$base: #0b0b12;
+$mantle: #181825;
+$surface0: #313244;
+$surface1: #45475a;
+$text: #c1c9e6;
+$red: #f38ba8;
+$peach: #fab387;
+$yellow: #f9e2af;
+$green: #a6e3a1;
+$teal: #94e2d5;
+$blue: #89b4fa;
+$mauve: #cba6f7;
+$flamingo: #f2cdcd;
+
+// ── Bar Window ──────────────────────────────────────────────
+window {
+  background: transparent;
+  font-family: "Monaspace Xenon", "Symbols Nerd Font", monospace;
+  font-size: 13px;
+  color: $text;
+}
+
+centerbox#bar {
+  margin: 4px 8px 0;
+}
+
+// ── Shared module pill ──────────────────────────────────────
+.module {
+  border-radius: 10px;
+  padding: 2px 10px;
+  margin: 2px;
+  color: $base;
+  font-weight: bold;
+  min-height: 24px;
+}
+
+// ── Left: Focused Window ────────────────────────────────────
+.FocusedWindow {
+  padding: 0 8px;
+  color: $text;
+
+  .window-icon {
+    font-size: 14px;
+  }
+
+  .window-title {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+}
+
+// ── Center: Workspaces ──────────────────────────────────────
+.Workspaces {
+  button {
+    background: transparent;
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin: 2px;
+    min-width: 28px;
+    color: $surface1;
+    border: none;
+    box-shadow: none;
+
+    &.focused {
+      color: $text;
+      background: rgba($text, 0.15);
+    }
+
+    &:hover {
+      background: rgba($text, 0.1);
+    }
+  }
+
+  .ws-window-icon {
+    font-size: 11px;
+    color: $surface1;
+  }
+
+  button.focused .ws-window-icon {
+    color: $text;
+  }
+}
+
+// ── Right: Tray ─────────────────────────────────────────────
+.SysTray {
+  border-radius: 10px;
+  padding: 0 6px;
+  margin: 2px;
+  background: $mantle;
+
+  menubutton {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 2px 4px;
+  }
+
+  image {
+    -gtk-icon-size: 16px;
+  }
+}
+
+// ── Right: Colored pill modules ─────────────────────────────
+.Bluetooth {
+  background: $blue;
+
+  label {
+    font-size: 14px;
+  }
+}
+
+.Network {
+  background: $surface0;
+  color: $text;
+
+  image {
+    -gtk-icon-size: 16px;
+  }
+}
+
+.Audio {
+  background: $yellow;
+
+  menubutton {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.Clock {
+  background: $green;
+
+  menubutton {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.Gamemode {
+  background: $surface0;
+  color: $text;
+}
+
+.Power {
+  background: $red;
+}
+
+// ── Popovers ────────────────────────────────────────────────
+popover {
+  background: $mantle;
+  border-radius: 10px;
+  padding: 8px;
+  color: $text;
+
+  .date-label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  calendar {
+    background: $base;
+    border-radius: 8px;
+    padding: 4px;
+    color: $text;
+  }
+
+  slider trough {
+    background: $surface0;
+    border-radius: 4px;
+    min-height: 6px;
+  }
+
+  slider highlight {
+    background: $yellow;
+    border-radius: 4px;
+  }
+}

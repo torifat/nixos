@@ -6,7 +6,8 @@
     ./binds.nix
     ./configuration.nix
     ./rofi.nix
-    ./waybar.nix
+    ./ags.nix
+    # ./waybar.nix
     ./windowrules.nix
     ./hyprlock.nix
   ];
