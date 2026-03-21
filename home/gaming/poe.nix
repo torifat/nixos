@@ -1,0 +1,6 @@
+{ pkgs, ... }:
+
+{
+  programs.awakened-poe-trade.enable = true;
+}
+# vim:et:sw=2:ts=2:sta:nu

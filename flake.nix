@@ -71,7 +71,12 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.${settings.username} = import ./home;
+              home-manager.users.${settings.username} = {
+                imports = [
+                  (import ./home)
+                  flakes.homeManagerModules.default
+                ];
+              };
               home-manager.backupFileExtension = "backup";
               home-manager.extraSpecialArgs = {
                 inherit settings inputs;
