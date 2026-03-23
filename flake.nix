@@ -16,6 +16,15 @@
     };
 
     hyprland.url = "github:hyprwm/Hyprland";
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.noctalia-qs.follows = "noctalia-qs";
+    };
+    noctalia-qs = {
+      url = "github:noctalia-dev/noctalia-qs";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     stylix.url = "github:danth/stylix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     solarr = {
@@ -71,6 +80,7 @@
                 imports = [
                   (import ./home)
                   flakes.homeManagerModules.default
+                  inputs.noctalia.homeModules.default
                 ];
               };
               home-manager.backupFileExtension = "backup";

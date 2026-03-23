@@ -4,21 +4,10 @@
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
 
-    # e -> repeat, will repeat when held.
-    # l -> locked, will also work when an input inhibitor (e.g. a lockscreen) is active.
-    bindel = [
-      ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+"
-      ", XF86AudioLowerVolume, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-"
-      ", XF86MonBrightnessUp, exec, ddcutil -d 1 setvcp 10 + 5"
-      ", XF86MonBrightnessDown, exec, ddcutil -d 1 setvcp 10 - 5"
-    ];
-
-    bindl = [ ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle" ];
     bindm = [ "$mod, mouse:272, movewindow" ];
 
     bind = [
       "$mod, Q, killactive,"
-      "$mod, SPACE, exec, rofi -show drun -show-icons"
       "$mod SHIFT, T, exec, ghostty"
       "$mod, DELETE, exit,"
       "$mod, ESC, exec, hyprlock"

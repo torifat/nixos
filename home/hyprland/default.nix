@@ -5,8 +5,7 @@
     ./env.nix
     ./binds.nix
     ./configuration.nix
-    ./rofi.nix
-    ./waybar.nix
+    ./noctalia.nix
     ./windowrules.nix
     ./hyprlock.nix
   ];
@@ -63,10 +62,6 @@
     Install = {
       WantedBy = [ "hyprland-session.target" ];
     };
-  };
-
-  services.mako = {
-    enable = true;
   };
 }
 # vim:et:sw=2:ts=2:sta:nu

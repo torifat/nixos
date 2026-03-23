@@ -49,12 +49,17 @@
     # useXkbConfig = true; # use xkb.options in tty.
   };
 
+  hardware.bluetooth.enable = true;
+  services.power-profiles-daemon.enable = true;
+  services.upower.enable = true;
+
   services.gnome.gnome-keyring.enable = true;
   security = {
     polkit.enable = true;
     pam.services = {
       login.u2fAuth = true;
       sudo.u2fAuth = true;
+      system-login.u2fAuth = true;
       ly = {
         u2fAuth = true;
         enableGnomeKeyring = true;
