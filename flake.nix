@@ -32,6 +32,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     flakes.url = "github:torifat/flakes";
+    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
   };
 
   outputs =
@@ -60,6 +61,7 @@
           overlays = [
             flakes.overlays.default
             self.overlays.default
+            inputs.millennium.overlays.default
           ];
           config.allowUnfree = true;
         };

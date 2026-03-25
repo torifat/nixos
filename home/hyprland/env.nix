@@ -11,6 +11,7 @@
       "QT_AUTO_SCREEN_SCALE_FACTOR,1"
       # Causing some issues after latest firefox bump
       "MOZ_ENABLE_WAYLAND,0"
+      "QT_QPA_PLATFORMTHEME,qt6ct"
     ];
   };
 }

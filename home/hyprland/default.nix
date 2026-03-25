@@ -13,7 +13,6 @@
   home.packages = with pkgs; [
     libnotify
     hyprpicker
-    kdePackages.polkit-kde-agent-1
     # Screenshot
     grim
     slurp
@@ -43,25 +42,5 @@
     systemd.enable = true;
   };
 
-  systemd.user.services.polkit-kde-auth-agent = {
-    Unit = {
-      Description = "PolKit KDE Auth Service";
-      PartOf = [ "graphical-session.target" ];
-      Requires = [ "graphical-session.target" ];
-      After = [ "graphical-session.target" ];
-    };
-
-    Service = {
-      ExecStart = "${pkgs.kdePackages.polkit-kde-agent-1}/libexec/polkit-kde-authentication-agent-1";
-      BusName = "org.kde.polkit-kde-authentication-agent-1";
-      Slice = "background.slice";
-      TimeoutSec = "5sec";
-      Restart = "on-failure";
-    };
-
-    Install = {
-      WantedBy = [ "hyprland-session.target" ];
-    };
-  };
 }
 # vim:et:sw=2:ts=2:sta:nu

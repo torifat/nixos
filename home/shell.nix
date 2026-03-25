@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   home = {
@@ -23,7 +23,7 @@
   programs.vivid = {
     enable = true;
     enableZshIntegration = true;
-    activeTheme = "stylix";
+    activeTheme = lib.mkForce "catppuccin-mocha";
   };
 
   programs.bat = {

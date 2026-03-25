@@ -16,6 +16,7 @@
     packages = with pkgs; [
       pulsemixer
       pavucontrol
+      pwvucontrol
       obsidian
       # waybar dependency
       # wayland optimized Discord client

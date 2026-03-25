@@ -39,12 +39,6 @@
       "$mod SHIFT, S, movetoworkspace, special:magic"
 
       "$mod SHIFT, SPACE, exec, hyprctl switchxkblayout current next"
-
-      # Exiled Exchange 2
-      "SHIFT, SPACE, pass, title:^(exiled-exchange-2)$"
-      "CTRL, D, pass, class:^(exiled-exchange-2)$"
-      "CTRL ALT, D, pass, class:^(exiled-exchange-2)$"
-
     ]
     ++ (
       # Workspaces
