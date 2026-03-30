@@ -19,8 +19,9 @@
       # Apparently, without this nouveau may attempt to be used instead
       # (despite it being blacklisted)
       __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-      # Hardware cursors are currently broken on nvidia
-      WLR_NO_HARDWARE_CURSORS = "1";
+      # Hardware cursors work on modern nvidia drivers (525+)
+      # Enabling them allows direct scanout (compositor bypass) for fullscreen games
+      WLR_NO_HARDWARE_CURSORS = "0";
 
       # Required to use va-api it in Firefox. See
       # https://github.com/elFarto/nvidia-vaapi-driver/issues/96
@@ -38,6 +39,9 @@
 
       # Disable shader disk cache size limit (PoE has many shaders)
       "__GL_SHADER_DISK_CACHE_SKIP_CLEANUP" = "1";
+
+      # Disable Proton's accessibility bridge (xalia) — wastes ~20% CPU during games
+      PROTON_ENABLE_XALIA = "0";
     };
   };
 

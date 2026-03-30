@@ -17,12 +17,12 @@
     };
 
     misc = {
-      vrr = 1;
+      vrr = 2;
     };
 
-    monitor = [ ", preferred, auto, 1" ];
+monitor = [ "DP-1, 2560x1440@164.84, auto, 1" ];
 
-    cursor.no_hardware_cursors = true;
+    cursor.no_hardware_cursors = false;
     opengl.nvidia_anti_flicker = true;
 
   };

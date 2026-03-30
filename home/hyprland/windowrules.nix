@@ -10,17 +10,23 @@
       # Path of Exile 1
       "tag +poe1, match:class steam_app_238960"
       "workspace 4, match:tag poe1"
+      "fullscreen 1, match:tag poe1"
+      "suppress_event fullscreen, match:tag poe1"
       "immediate on, match:tag poe1"
       "no_blur on, match:tag poe1"
       "no_shadow on, match:tag poe1"
+      "no_anim on, match:tag poe1"
       "border_size 0, match:tag poe1"
 
       # Path of Exile 2
       "tag +poe2, match:class steam_app_2694490"
       "workspace 4, match:tag poe2"
+      "fullscreen 1, match:tag poe2"
+      "suppress_event fullscreen, match:tag poe2"
       "immediate on, match:tag poe2"
       "no_blur on, match:tag poe2"
       "no_shadow on, match:tag poe2"
+      "no_anim on, match:tag poe2"
       "border_size 0, match:tag poe2"
 
       # Exiled Exchange 2 overlay

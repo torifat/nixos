@@ -5,7 +5,8 @@
     enable = true;
     gamescopeSession.enable = true;
     extraCompatPackages = [ pkgs.proton-ge-bin ];
-    package = pkgs.steam.override {
+    # package = pkgs.millennium-steam;
+    package = pkgs.millennium-steam.override {
       extraPkgs =
         pkgs: with pkgs; [
           gamescope
@@ -25,6 +26,10 @@
         softrealtime = "auto";
         inhibit_screensaver = 0;
       };
+      custom = {
+        start = "${pkgs.docker}/bin/docker stop tdarr-node && caelestia shell gameMode enable";
+        end = "${pkgs.docker}/bin/docker start tdarr-node && caelestia shell gameMode disable";
+      };
       gpu = {
         apply_gpu_optimisations = "accept-responsibility";
         gpu_device = 0;
@@ -33,6 +38,5 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [ mangohud ];
 }
 # vim:et:sw=2:ts=2:sta:nu

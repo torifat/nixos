@@ -21,5 +21,4 @@
 
 ## Known issues (tracked in TODO.md)
 
-- Hyprland window rules in `home/hyprland/windowrules.nix` are disabled — broken after `windowrulev2` -> `windowrule` migration.
 - `bat-extras` is broken upstream — commented out in `home/shell.nix`.
