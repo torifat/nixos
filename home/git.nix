@@ -21,5 +21,10 @@
     pre-commit
     git-secrets
   ];
+
+  programs.lazygit = {
+    enable = true;
+    enableZshIntegration = true;
+  };
 }
 # vim:et:sw=2:ts=2:sta:nu
