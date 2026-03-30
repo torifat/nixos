@@ -20,18 +20,34 @@
     };
     settings = {
       settingsVersion = 59;
+      general = {
+        radiusRatio = 0.35;
+        iRadiusRatio = 0.35;
+      };
       location = {
         name = "Revesby, NSW, Australia";
       };
       dock.enabled = false;
       bar = {
+        barType = "framed";
         widgets = {
           left = [
-            {
-              id = "Launcher";
-              useDistroLogo = true;
-            }
             { id = "Clock"; }
+            {
+              id = "SystemMonitor";
+              showLoadAverage = true;
+              showNetworkStats = true;
+            }
+          ];
+          center = [
+            {
+              id = "Workspace";
+              emptyColor = "error";
+              focusedColor = "tertiary";
+              laebelMode = "name";
+              opcupiedColor = "none";
+              showLabelsOnlyWhenOccupied = false;
+            }
           ];
           right = [
             {
@@ -47,16 +63,19 @@
                 "indicator-solaar"
               ];
             }
+            { id = "Network"; }
             {
               id = "Bluetooth";
               displayMode = "alwaysHide";
             }
-            { id = "Network"; }
             { id = "Volume"; }
             { id = "Brightness"; }
             { id = "KeepAwake"; }
             { id = "NotificationHistory"; }
-            { id = "ControlCenter"; }
+            {
+              id = "ControlCenter";
+              useDistroLogo = true;
+            }
           ];
         };
       };
@@ -116,13 +135,15 @@
     bindl = [
       ", XF86AudioMute, exec, $ipc volume muteOutput"
     ];
+
     general = {
       gaps_in = 5;
       gaps_out = 10;
+      allow_tearing = false;
     };
 
     decoration = {
-      rounding = 20;
+      rounding = 10;
       rounding_power = 2;
 
       shadow = {
@@ -134,19 +155,19 @@
 
       blur = {
         enabled = true;
-        size = 3;
-        passes = 2;
-        vibrancy = 0.1696;
-        ignore_opacity = true;
-        popups = true;
+        size = 6;
+        passes = 3;
+        # vibrancy = 0.1696;
+        # ignore_opacity = true;
+        # popups = true;
       };
+
     };
 
     layerrule = [
-      "blur on, match:namespace ^noctalia"
-      "blur_popups on, match:namespace ^noctalia"
-      "ignore_alpha 0.3, match:namespace ^noctalia"
-      "xray on, match:namespace ^noctalia"
+      "match:namespace noctalia-background-.*$, blur on"
+      "match:namespace noctalia-background-.*$, ignore_alpha 0.5"
+      "match:namespace noctalia-background-.*$, blur_popups on"
     ];
   };
 }

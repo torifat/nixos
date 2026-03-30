@@ -10,12 +10,12 @@
       "$mod, Q, killactive,"
       "$mod SHIFT, T, exec, ghostty"
       "$mod, DELETE, exit,"
+      "$mod SHIFT, R, exec, hyprctl reload"
       "$mod, ESC, exec, hyprlock"
 
       # Screenshots
-      "CTRL SHIFT, 4, exec, grim -g \"$(slurp)\" - | wl-copy"
       "ALT SHIFT, 4, exec, grim -g \"$(slurp)\" - | wl-copy"
-      "CTRL SHIFT, 3, exec, grim - | wl-copy"
+      "ALT SHIFT, 3, exec, grim - | wl-copy"
 
       # Move window focus with vim keys
       "$mod, H, movefocus, l"

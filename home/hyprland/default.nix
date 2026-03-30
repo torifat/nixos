@@ -5,7 +5,8 @@
     ./env.nix
     ./binds.nix
     ./configuration.nix
-    ./noctalia.nix
+    ./caelestia.nix
+    # ./noctalia.nix
     ./windowrules.nix
     ./hyprlock.nix
   ];
