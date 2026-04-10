@@ -3,6 +3,8 @@
 {
   wayland.windowManager.hyprland.settings = {
     windowrule = [
+      # Chrome extension popups (e.g. 1Password notifications)
+      "float on, match:class ^$, match:title ^$"
       # Picture-in-Picture
       "float on, match:title ^(Picture-in-Picture)$"
       "pin on, match:title ^(Picture-in-Picture)$"

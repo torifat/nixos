@@ -8,10 +8,22 @@
       environment = [ ];
     };
     settings = {
-      bar.status = {
-        showBattery = false;
+      clock = {
+        showDate = true;
+        showIcon = false;
       };
-      paths.wallpaperDir = "~/Images";
+      bar = {
+        activeWindow = {
+          compact = true;
+        };
+        popouts = {
+          activeWindow = false;
+        };
+        status = {
+          showBattery = false;
+        };
+        paths.wallpaperDir = "~/Images";
+      };
     };
     cli = {
       enable = true;

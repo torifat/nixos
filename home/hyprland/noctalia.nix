@@ -44,7 +44,7 @@
               id = "Workspace";
               emptyColor = "error";
               focusedColor = "tertiary";
-              laebelMode = "name";
+              labelMode = "name";
               opcupiedColor = "none";
               showLabelsOnlyWhenOccupied = false;
             }
@@ -81,7 +81,7 @@
       };
       appLauncher = {
         enableClipboardHistory = true;
-        termiinalComamnd = "ghostty -e";
+        terminalComamnd = "ghostty -e";
         overviewLayer = true;
       };
     };

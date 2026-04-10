@@ -59,6 +59,7 @@
   security = {
     polkit.enable = true;
     pam.services = {
+      hyprlock.u2fAuth = true;
       login.u2fAuth = true;
       sudo.u2fAuth = true;
       system-login.u2fAuth = true;

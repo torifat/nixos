@@ -5,7 +5,6 @@
     enable = true;
     settings = {
       general = {
-        grace = 0;
         ignore_empty_input = true;
       };
     };
